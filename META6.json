@@ -1,0 +1,15 @@
+{
+    "raku" : "6.c",
+    "name" : "DBF",
+    "version" : "0.0.1",
+    "provides" : {
+        "DBF" : "lib/DBF.rakumod"
+    },
+    "depends" : [ ],
+    "build-depends" : [ ],
+    "test-depends" : [ ],
+    "resources" : [ ],
+    "tags": [
+    ],
+    "source-url" : "git://github.com/uzluisf/raku-dbf.git"
+}

@@ -3,7 +3,8 @@
     "name" : "DBF",
     "version" : "0.0.1",
     "provides" : {
-        "DBF" : "lib/DBF.rakumod"
+        "DBF::Field" : "lib/DBF/Field.rakumod",
+        "DBF::Header" : "lib/DBF/Header.rakumod"
     },
     "depends" : [ ],
     "build-depends" : [ ],

@@ -1,0 +1,17 @@
+use Test;
+use DBF::Header;
+
+subtest 'header', {
+    my $header = DBF::Header.new;
+    $header.read('./test.dbf');
+
+    subtest 'metadata', {
+        is $header.version, 3, 'correct version';
+        is $header.last-update, Date.new(2014,8,6), 'correct date';
+        is $header.records-count, 7, 'correct number of records';
+        is $header.header-length, 225, 'correct header length (in bytes)';
+        is $header.record-length, 55, 'correct record length (in bytes)';
+        is $header.fields.elems, 6, 'correct number of fields';
+    };
+};
+

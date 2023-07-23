@@ -14,7 +14,7 @@ submethod TWEAK {
 }
 
 method !read-data(--> Nil) {
-    $!version = $!data.subbuf(0, 1)[0];
+    $!version = $!data.subbuf(0, 1)[0].base(16).fmt("%02s");
 
     given $!version {
         when 0x02 {

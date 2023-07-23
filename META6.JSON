@@ -1,0 +1,26 @@
+{
+    "raku" : "6.c",
+    "name" : "DBF",
+    "api"  : "1",
+    "auth" : "github:uzluisf",
+    "source-url" : "git://github.com/uzluisf/raku-dbf.git",
+    "version" : "0.0.1",
+    "description" : "Raku package for reading dBase files.",
+    "authors" : [ "Luis Uceta" ],
+    "license" : "Artistic-2.0",
+    "provides" : {
+        "DBF::Table" : "lib/DBF/Table.rakumod",
+        "DBF::Header" : "lib/DBF/Header.rakumod",
+        "DBF::Record" : "lib/DBF/Record.rakumod",
+        "DBF::Column" : "lib/DBF/Column.rakumod",
+        "DBF::ColumnType" : "lib/DBF/ColumnType.rakumod",
+    },
+    "depends" : [ ],
+    "build-depends" : [ ],
+    "test-depends" : [ ],
+    "resources" : [ ],
+    "tags": [
+      "DBF", "Binary", "Database", "DB",
+    ]
+}
+
